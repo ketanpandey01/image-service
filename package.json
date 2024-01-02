@@ -2,8 +2,9 @@
   "name": "image-service",
   "version": "1.0.0",
   "description": "This is a sevice to process incoming image data from client",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -11,5 +12,8 @@
   "type": "module",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }
