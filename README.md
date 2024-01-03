@@ -2,7 +2,7 @@
 
 ## High level architecture
 
-![High level design](docs\HLD.png)
+![High level design](docs/HLD.png)
 
 ## Client
 Client upload binary image data to Image Service
