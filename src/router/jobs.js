@@ -3,13 +3,13 @@ import * as Job from '../controllers/jobs.js'
 
 export const jobRouter = (authentication) => {
   const router = Router();
-//   router.use(authentication);
+  router.use(authentication);
 
-  router.post('/v1', Job.submitJob)
-
-  router.get('/v1', Job.getJobData)
+  router.post('/', Job.submitJob)
   
-  router.get('/v1/status', Job.getJobStatus)
+  router.get('/status/:jobId', Job.getJobStatus)
+
+  router.get('/data/:jobId', Job.getJobData)
 
   return router
 };
